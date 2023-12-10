@@ -26,15 +26,15 @@ export default function Header() {
                     <img src={logoMarca} alt="logo marca" />
                 </Link>
                 <nav className={classNav}>
-                    <Link to="/">Home</Link>
-                    <Link to="/">Sobre</Link>
-                    <Link to="/">Equipe</Link>
-                    <Link to="/">Serviços</Link>
-                    <Link to="/">Fotos</Link>
-                    <Link to="/">Contato</Link>
+                    <Link to="/" className="nav-item">Home</Link>
+                    <Link to="/" className="nav-item">Sobre</Link>
+                    <Link to="/" className="nav-item">Equipe</Link>
+                    <Link to="/" className="nav-item">Serviços</Link>
+                    <Link to="/" className="nav-item">Fotos</Link>
+                    <Link to="/" className="nav-item">Contato</Link>
                 </nav>
             </div>
-            <button onClick={()=>handleClick()}>⇊</button>
+            <button onClick={()=>handleClick()} className="button-header">⇊</button>
         </header>
     )
 }
