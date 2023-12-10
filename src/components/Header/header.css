@@ -13,7 +13,7 @@
     background-clip: padding-box;
     border-bottom: 8px solid rgba(255, 255, 255, 0.25);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    transition: height 2s ease;
+    transition: height 0.5s ease;
 }
 
 .header-container {
@@ -69,17 +69,22 @@ img {
     }
 
     .button-header {
+        margin:auto 0px auto 0px;
         display: block;
-        width: 30px;
-        height: 30px;
-        border: none;
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgb(199, 199, 199);
+        background-color: #222222;
         border-radius: 10px;
         cursor: pointer;
         transition: 0.5s;
-        color: rgb(143, 2, 2);
-        font-size: 20px;
+        color: rgb(199, 199, 199);
+        font-size: 25px;
     }
     .header-container-minimized{
+        margin-top: 15px;
+        padding: 0 20px;
+        height: 100px;
         display: flex;
         flex-direction: column;
     }
@@ -92,16 +97,16 @@ img {
         height: 450px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
         padding: 0 20px;
         background-color: #111111;
-        background-clip: padding-box;
         border-bottom: 8px solid rgba(255, 255, 255, 0.25);
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-        transition: height 2s ease;
+        transition: height 1s ease;
     }
     img{
-        margin-left: 0px;
+        margin: auto;
+        height: 60px;
+        width: auto;
     }
     .nav-item{
         font-size: 18px;

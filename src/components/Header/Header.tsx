@@ -34,7 +34,7 @@ export default function Header() {
                     <Link to="/" className="nav-item">Contato</Link>
                 </nav>
             </div>
-            <button onClick={()=>handleClick()} className="button-header">⇊</button>
+            <button onClick={()=>handleClick()} className="button-header">≡</button>
         </header>
     )
 }
