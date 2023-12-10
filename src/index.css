@@ -9,10 +9,26 @@
   background-image:url('./design-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 55%;
   background-color: #242424;
   color: white;
-  height: 115vh;
+  width:100%;
+  height: auto;
+  min-height: 175vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  position: relative;
+  /* justify-content: space-between; */
+}
+
+
+@media screen and (max-width: 950px) {
+
+  #root{
+    background-position: 50%;
+    min-height: 125vh;
+    height: auto;
+  }
+
+  
 }

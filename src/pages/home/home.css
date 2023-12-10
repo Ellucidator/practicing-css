@@ -29,7 +29,7 @@
     font-family: 'Share-Tech';
     font-size: 65px;
     font-weight: 700;
-    margin: 100px 0px 0px 100px ;
+    margin: 50px 0px 0px 175px ;
     padding-left: 10px ;
     border-left: 5px solid rgb(163, 0, 0);
     -webkit-text-stroke: 2px black;
@@ -39,7 +39,7 @@
     font-family: 'Share-Tech';
     font-size: 75px;
     font-weight: 700;
-    margin: 0px 0px 0px 135px ;
+    margin: 0px 0px 0px 185px ;
     -webkit-text-stroke: 2px black;
 }
 
@@ -54,7 +54,7 @@
     font-weight: 700;
     cursor: pointer;
     transition: 0.5s;
-    margin: 15px 0px 0px 278px ;
+    margin: 30px 0px 0px 397px ;
 }
 .button-home:hover{
     border: 2px solid rgb(163, 0, 0);
@@ -63,5 +63,52 @@
     width: 205px;
     font-size: 23px;
     transition: 0.5s;
-    margin: 0px 0px 25px 275px ;
+    margin: 20px 0px 0px 397px ;
+}
+
+@media screen and (max-width: 950px) {
+    .home{
+        height: 85vh;
+    }
+    .home-initial{
+        height: 400px;
+        width: 85%;
+        border-radius: 10px;
+        background-position: 15%;
+        background-size: cover;
+
+    }
+    .title-home-01{
+        font-size: 45px;
+        margin: 15px 0px 0px 50px ;
+        padding-left: 10px ;
+        border-left: 5px solid rgb(163, 0, 0);
+        -webkit-text-stroke: 2px black;
+    }
+    .title-home-01-1{
+        font-size: 50px;
+        margin: 25px 0px 0px 140px ;
+        -webkit-text-stroke: 2px black;
+    }
+    .title-home-01-1:hover{
+
+        -webkit-text-stroke: 2px rgb(163,0,0);
+    }
+    .button-home{
+        width: 300px;
+        height: 80px;
+        font-size: 35px;
+        align-self: flex-end;
+        margin: 110px 0px 0px 50px ;
+        
+    }
+    .button-home:hover{
+        border: 2px solid rgb(163, 0, 0);
+        color: rgb(163, 0, 0);
+        height: 85px;
+        width: 305px;
+        font-size: 38px;
+        transition: 0.5s;
+        margin: 100px 0px 0px 50px ;
+    }
 }
