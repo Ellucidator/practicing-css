@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 import './header.css'
 import logoMarca from './img/logo-marca.gif'
+import logoMarcaWhite from './img/logo-marca-white.gif'
 import { useState } from "react";
 
 export default function Header() {
     const [headerContainer, setHeaderContainer]= useState('header-container')
     const [classNav, setClassNav] = useState('nav-container')
     const [bodyHeader, setBodyHeader] = useState('body-header')
+    const [logoHeader, setLogoHeader] = useState(logoMarca)
+    const [buttonTheme, setButtonTheme] = useState('button-theme dark')
     function handleClick(){
         if(headerContainer === 'header-container'){
             setHeaderContainer('header-container-minimized')
@@ -20,15 +23,27 @@ export default function Header() {
         }
     }
     function handleClickTheme(){
-        document.documentElement.style.setProperty('--primary', '#ffffff')
-        document.documentElement.style.setProperty('--secondary', 'rgb(163, 0, 0)')
-        document.documentElement.style.setProperty('--tertiary', 'black')
+
+        if(buttonTheme === 'button-theme dark'){
+            setButtonTheme('button-theme white')
+            document.documentElement.style.setProperty('--primary', '#EDEDED')
+            document.documentElement.style.setProperty('--tertiary', 'black')
+            document.documentElement.style.setProperty('--design-bg', 'url(./design-bg-white.png)')
+            setLogoHeader(logoMarcaWhite)
+        }
+        else{
+            setButtonTheme('button-theme dark')
+            document.documentElement.style.setProperty('--primary', '#111111')
+            document.documentElement.style.setProperty('--tertiary', '#ffffff')
+            document.documentElement.style.setProperty('--design-bg', 'url(./design-bg.png)')
+            setLogoHeader(logoMarca)
+        }
     }
     return (
         <header className={bodyHeader}>
             <div className={headerContainer}>
                 <Link to="/" className="logo">
-                    <img src={logoMarca} alt="logo marca" />
+                    <img src={logoHeader} alt="logo marca" />
                 </Link>
                 <nav className={classNav}>
                     <Link to="/" className="nav-item">Home</Link>

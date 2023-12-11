@@ -4,4 +4,6 @@
     --primary: #111111;
     --secondary: rgb(163, 0, 0);
     --tertiary: #ffffff;
+
+    --design-bg: url('./design-bg.png');
 }
