@@ -19,6 +19,11 @@ export default function Header() {
             setBodyHeader('body-header')
         }
     }
+    function handleClickTheme(){
+        document.documentElement.style.setProperty('--primary', '#ffffff')
+        document.documentElement.style.setProperty('--secondary', 'rgb(163, 0, 0)')
+        document.documentElement.style.setProperty('--tertiary', 'black')
+    }
     return (
         <header className={bodyHeader}>
             <div className={headerContainer}>
@@ -34,6 +39,7 @@ export default function Header() {
                     <Link to="/" className="nav-item">Contato</Link>
                 </nav>
             </div>
+            <button className="button-theme" onClick={()=>handleClickTheme()}>Dark/white</button>
             <button onClick={()=>handleClick()} className="button-header">≡</button>
         </header>
     )

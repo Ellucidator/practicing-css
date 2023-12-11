@@ -1,3 +1,5 @@
+@import '../../colors/colors.css';
+
 @font-face {
     font-family: 'Share-Tech';
     src: url('../../fonts/ShareTech-Regular.ttf');
@@ -9,7 +11,7 @@
     align-items: center;
     padding: 0 20px;
     height: 100px;
-    background-color: #111111;
+    background-color: var(--primary);
     background-clip: padding-box;
     border-bottom: 8px solid rgba(255, 255, 255, 0.25);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
@@ -36,7 +38,7 @@ a {
     font-family: 'Share-Tech';
     font-size: 22px;
     font-weight: bold;
-    color: white;
+    color: var(--tertiary);
     text-decoration: none;
     transition: 0.5s;
 }
@@ -47,7 +49,7 @@ a {
 
 a:hover{
     margin-top: 15px;
-    color: rgb(129, 0, 0);
+    color: var(--secondary);
 }
 
 
@@ -73,12 +75,12 @@ img {
         display: block;
         width: 40px;
         height: 40px;
-        border: 1px solid rgb(199, 199, 199);
-        background-color: #222222;
+        border: 1px solid var(--tertiary);
+        background-color: var(--primary);
         border-radius: 10px;
         cursor: pointer;
         transition: 0.5s;
-        color: rgb(199, 199, 199);
+        color: var(--tertiary);
         font-size: 25px;
     }
     .header-container-minimized{
@@ -98,7 +100,7 @@ img {
         display: flex;
         justify-content: space-between;
         padding: 0 20px;
-        background-color: #111111;
+        background-color: var(--primary);
         border-bottom: 8px solid rgba(255, 255, 255, 0.25);
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
         transition: height 1s ease;
@@ -111,7 +113,7 @@ img {
     .nav-item{
         font-size: 18px;
         margin-top: 10px;
-        border-left: 2px solid rgb(161, 0, 0);
+        border-left: 2px solid var(--secondary);
         padding-left: 10px;
     }
 }

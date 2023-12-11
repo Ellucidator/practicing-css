@@ -1,3 +1,4 @@
+@import'../src/colors/colors.css';
 *{
   margin: 0px;
   padding: 0px;
@@ -10,8 +11,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 55%;
-  background-color: #242424;
-  color: white;
+  color: var(--tertiary);
   width:100%;
   height: auto;
   min-height: 175vh;
