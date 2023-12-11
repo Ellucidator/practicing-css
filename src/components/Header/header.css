@@ -33,7 +33,7 @@
     margin-right: 100px;
 }
 
-a {
+.nav-item {
     margin-top: 25px;
     font-family: 'Share-Tech';
     font-size: 22px;
@@ -47,7 +47,7 @@ a {
     margin-right: 50px;
 }
 
-a:hover{
+.nav-item:hover{
     margin-top: 15px;
     color: var(--secondary);
 }

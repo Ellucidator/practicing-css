@@ -5,11 +5,11 @@ import logoMarcaWhite from './img/logo-marca-white.gif'
 import { useState } from "react";
 
 export default function Header() {
-    const [headerContainer, setHeaderContainer]= useState('header-container')
-    const [classNav, setClassNav] = useState('nav-container')
-    const [bodyHeader, setBodyHeader] = useState('body-header')
-    const [logoHeader, setLogoHeader] = useState(logoMarca)
-    const [buttonTheme, setButtonTheme] = useState('button-theme dark')
+    const [headerContainer, setHeaderContainer]= useState<string>('header-container')
+    const [classNav, setClassNav] = useState<string>('nav-container')
+    const [bodyHeader, setBodyHeader] = useState<string>('body-header')
+    const [logoHeader, setLogoHeader] = useState<string>(logoMarca)
+    const [buttonTheme, setButtonTheme] = useState<string>('button-theme dark')
     function handleClick(){
         if(headerContainer === 'header-container'){
             setHeaderContainer('header-container-minimized')

@@ -1,0 +1,36 @@
+.register-form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: auto;
+    background-color: var(--primary);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+input{
+    width: 70%;
+    height: 35px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--tertiary);
+    font-size: 18px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+}
+
+

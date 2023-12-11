@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './home.css'
 
 export function Home(){
@@ -7,7 +8,9 @@ export function Home(){
             <section className="home-element-01">
                 <h1 className='title-element-01'>Junte-se a Familia</h1>
                 <h1 className='title-element-01-1'>Bio Corpo</h1>
-                <button className='button-element-01'>Matricule-se</button>
+                <Link to="/register" className='link-element-01'>
+                    <button className='button-element-01'>Matricule-se</button>
+                </Link>
             </section>
             <h1 className='title-modalites'>Modalidades</h1>
             <section className='home-element-02'>
