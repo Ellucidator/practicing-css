@@ -54,7 +54,7 @@ export default function Header() {
                     <Link to="/" className="nav-item">Contato</Link>
                 </nav>
             </div>
-            <button className="button-theme" onClick={()=>handleClickTheme()}>Dark/white</button>
+            <button className={buttonTheme} onClick={()=>handleClickTheme()}>Dark/white</button>
             <button onClick={()=>handleClick()} className="button-header">≡</button>
         </header>
     )
